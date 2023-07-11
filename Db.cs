@@ -5,6 +5,7 @@ namespace ITProgerDB
 {
     class Db
     {
+       
         private const string HOST = "localhost";
         private const string PORT = "3306"; //порт MySQL
         private const string DATABASE = "itproger";
@@ -29,6 +30,7 @@ namespace ITProgerDB
                     "ENGINE = MYISAM";
                 command.Connection = conn;
                 await command.ExecuteNonQueryAsync();
+                Console.WriteLine("tst");
             } 
         }
 
